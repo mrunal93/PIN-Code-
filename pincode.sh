@@ -1,9 +1,9 @@
 #!/bin/bash
 
-read -p "Enter the pin:" pin
+read -p "Enter the pin:" Pin
 pincode="^[A-Z]{1}[0-9]{6,}$"
 
-if [[ $pin =~ $pincode ]]
+if [[ $Pin =~ $pincode ]]
 then
 	echo "Valide Pin"
 else
