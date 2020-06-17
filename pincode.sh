@@ -1,8 +1,7 @@
 #!/bin/bash
 
 read -p "Enter the pin:" Pin
-pincode="^[A-Z]{1}[0-9]{6,}$"
-
+pincode="^[0-9]{6}[A-Z]{1}"
 if [[ $Pin =~ $pincode ]]
 then
 	echo "Valide Pin"
